@@ -26,9 +26,14 @@ main {
   margin: 0;
 }
 
-h1 {
+h1,
+h2 {
   color: hsl(0, 0%, 100%);
   margin: 0 35px;
+}
+
+button {
+  font-family: "Outfit", sans-serif;
 }
 
 footer {
@@ -40,12 +45,13 @@ footer {
   justify-content: center;
 }
 
+.thank-you,
 .card__container {
-  background: rgb(23, 30, 40);
-  background: linear-gradient(
-    0deg,
-    rgba(23, 30, 40, 1) 0%,
-    rgba(36, 43, 53, 1) 100%
+  background: rgb(36, 43, 53);
+  background: radial-gradient(
+    at top,
+    rgba(36, 43, 53, 1) 0%,
+    rgba(23, 30, 40, 1) 100%
   );
   display: flex;
   flex-direction: column;
@@ -61,10 +67,15 @@ footer {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  margin: 35px;
+  margin: 35px 35px 25px 35px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.star img {
+  width: 100%;
+  height: 100%;
 }
 
 .card__container p {
@@ -73,38 +84,94 @@ footer {
   line-height: 1.5rem;
 }
 
+.thank-you img {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.thank-you p {
+  margin: 15px 35px 20px 35px;
+  line-height: 1.5rem;
+}
+
+.thank-you h2 {
+  margin-top: 10px;
+}
+
+.thank-you {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.you-selected {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
+  border: none;
+  border-radius: 50px;
+  padding: 5px 20px;
+}
+
+.thank-you__paragraph {
+  color: hsl(217, 12%, 63%);
+
+}
+
 .grid__wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1rem;
-  margin: 0 35px;
+  grid-gap: 1.72rem;
+  margin: 10px 35px 25px 35px;
 }
 
 .rate__button {
   background-color: hsl(213, 19%, 18%);
   color: hsl(217, 12%, 63%);
-  height: 25px;
-  width: 25px;
-  padding: 1.5rem;
+  padding: 1rem;
   border: none;
   border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rate__button:hover {
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.rate__button:focus {
+  color: white;
+  background-color: hsl(217, 12%, 63%);
 }
 
 .submit__button {
   color: white;
   background-color: hsl(25, 97%, 53%);
-  margin: 15px;
-  padding: 15px;
-  font-family: "Outfit", sans-serif;
+  margin: 0px 35px 35px 35px;
+  padding: 13px;
   font-size: 1rem;
   font-kerning: normal;
   border-radius: 50px;
+  border-style: none;
+}
+
+.submit__button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+  cursor: pointer;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 10px;
+  color: hsl(217, 12%, 63%);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(25, 97%, 53%);
+  
 }
