@@ -45,6 +45,14 @@ footer {
   justify-content: center;
 }
 
+.hidden {
+  display: none; 
+}
+
+.not-hidden {
+  display: flex;
+}
+
 .thank-you,
 .card__container {
   background: rgb(36, 43, 53);
@@ -53,7 +61,6 @@ footer {
     rgba(36, 43, 53, 1) 0%,
     rgba(23, 30, 40, 1) 100%
   );
-  display: flex;
   flex-direction: column;
   width: 400px;
   height: 400px;
@@ -84,6 +91,10 @@ footer {
   line-height: 1.5rem;
 }
 
+/* .thank-you{
+  display: flex;
+} */
+
 .thank-you img {
   margin-top: 10px;
   margin-bottom: 15px;
@@ -99,7 +110,6 @@ footer {
 }
 
 .thank-you {
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
