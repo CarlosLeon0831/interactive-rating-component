@@ -1,0 +1,110 @@
+/* * {
+  border: 1px solid red;
+} */
+
+html,
+body {
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(228, 11%, 9%);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  margin: 0 35px;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__container {
+  background: rgb(23, 30, 40);
+  background: linear-gradient(
+    0deg,
+    rgba(23, 30, 40, 1) 0%,
+    rgba(36, 43, 53, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  border-radius: 40px;
+  justify-content: center;
+}
+
+.star {
+  padding: 15px;
+  background-color: hsl(213, 19%, 18%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__container p {
+  color: hsl(217, 12%, 63%);
+  margin: 15px 35px 20px 35px;
+  line-height: 1.5rem;
+}
+
+.grid__wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  margin: 0 35px;
+}
+
+.rate__button {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  height: 25px;
+  width: 25px;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 50px;
+}
+
+.submit__button {
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  margin: 15px;
+  padding: 15px;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-kerning: normal;
+  border-radius: 50px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
