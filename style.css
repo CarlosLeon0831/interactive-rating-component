@@ -131,7 +131,7 @@ footer {
 .grid__wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1.72rem;
+  gap: 1.72rem;
   margin: 10px 35px 25px 35px;
 }
 
@@ -184,4 +184,72 @@ footer {
 .attribution a {
   color: hsl(25, 97%, 53%);
   
+}
+
+@media screen and (max-width: 375px){
+  h1, h2 {
+    margin: 15px 20px;
+  }
+
+  footer {
+    max-width: 375px;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+
+  main {
+    width: 375px;
+  }
+
+  .thank-you,
+  .card__container{
+    width: 300px;
+    height: 330px;
+    margin: 15px 15px 20px 15px;
+    border-radius: 25px;
+  }
+
+  .card__container p {
+    margin: 5px 20px 20px 20px;
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+  }
+
+  .thank-you p {
+    margin: 5px 20px 20px 20px;
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+  }
+  .star {
+    margin: 15px 20px 15px 20px;
+    padding: 13px;
+  }
+
+  .star img {
+    width: 90%;
+    height: 90%;
+  }
+
+
+  .grid__wrapper {
+    margin: 10px 20px 20px 20px;
+    gap: 1rem;
+  }
+
+  .rate__button {
+    padding: 0.7rem;
+  }
+
+  .submit__button {
+    margin: 0px 20px 25px 20px;
+    font-size: 0.8rem;
+    padding: 11px;
+  }
+
+  .thank-you img {
+    width: 45%;
+  }
 }
